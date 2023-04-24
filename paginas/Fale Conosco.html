@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fale Conosco - ZXY Tecnologia</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="Container-cabeçalho">
+        <div class="logo">
+               <img src="/img/ZXY (2).png" alt="logo">
+               <h1>ZXY TECNOLOGIA</h1>
+        </div><!--logo-->
+
+        <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#" class="btn">Fale Conosco</a></li>
+        </ul>
+    </header><!--Container-cabeçalho-->
+
+    <aside>
+        <div class="icon-menu" onclick="abrirmenu()">
+            <span><ion-icon name="menu-outline"></ion-icon></span>
+        </div><!--icon-menu-->
+
+        <div id="barra-menu">
+            <ul class="links">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="paginas/Sobrenos.html">Sobre Nós</a>
+                </li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#" class="btn">Fale Conosco</a></li>
+            </ul>
+
+            <div class="C-icon">
+                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+            </div><!--icon-->
+        </div><!--barra-menu-->
+     </aside>
+	<header>
+		<h1>Fale Conosco</h1>
+	</header>
+	
+	<main>
+		<form id="contact-form" method="post" action="enviar-email.php">
+			<label for="name">Nome:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Mensagem:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 ZXY Tecnologia. Todos os direitos reservados.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
